@@ -2,7 +2,7 @@
   "name": "eduswap-server",
   "version": "1.0.0",
   "private": true,
-  "description": "EduSwap backend \u2014 student marketplace API",
+  "description": "EduSwap backend — student marketplace API",
   "main": "dist/server.js",
   "engines": {
     "node": ">=18.18.0"
@@ -43,8 +43,8 @@
     "@types/compression": "^1.7.5",
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/jsonwebtoken": "^9.0.7",
+    "@types/express": "^4.17.25",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/morgan": "^1.9.9",
     "@types/multer": "^1.4.12",
     "@types/node": "^22.9.0",
