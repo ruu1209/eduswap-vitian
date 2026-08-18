@@ -11,27 +11,40 @@ const pillars = [
 
 export function HomePage() {
   return (
-    <div className="space-y-20">
-      <section className="mx-auto max-w-3xl pt-10 text-center">
-        <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          For verified college students
-        </p>
-        <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
-          The campus library that <span className="text-primary">runs on trust</span>.
-        </h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-          EduSwap is where students swap notes, resell textbooks and pass down the resources that
-          got them through the semester — verified by college email, priced by peers.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Button size="lg" asChild>
-            <Link to={ROUTES.SIGNUP}>
-              Join with your college email <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
-          <Button size="lg" variant="outline" asChild>
-            <Link to={ROUTES.RESOURCES}>Browse resources</Link>
-          </Button>
+    <div className="space-y-20 pb-12">
+      <section className="mx-auto max-w-6xl pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7 space-y-6 text-left">
+            <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              For verified college students
+            </p>
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
+              The campus library that <span className="text-primary">runs on trust</span>.
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-xl">
+              EduSwap is where students swap notes, resell textbooks and pass down the resources that
+              got them through the semester — verified by college email, priced by peers.
+            </p>
+            <div className="flex flex-wrap items-center gap-3">
+              <Button size="lg" asChild>
+                <Link to={ROUTES.SIGNUP}>
+                  Join with your college email <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link to={ROUTES.RESOURCES}>Browse resources</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="bg-white border border-border rounded-3xl p-3 shadow-sm">
+              <img
+                src="/students.png"
+                alt="VIT students collaborating"
+                className="w-full aspect-[4/3] object-cover rounded-2xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
