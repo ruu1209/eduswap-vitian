@@ -17,9 +17,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
-        <Link to={ROUTES.HOME} className="flex items-center gap-2">
-          <BookOpen className="h-5 w-5 text-primary" />
-          <span className="font-display text-lg font-semibold tracking-tight">EduSwap</span>
+        <Link to={ROUTES.HOME} className="flex items-center gap-1.5 hover:opacity-90 transition-opacity">
+          <span className="bg-[#A7F3D0] border border-black rounded-md px-1.5 py-0.5 text-black font-semibold text-xs leading-none">
+            Edu
+          </span>
+          <span className="font-display text-lg font-bold tracking-tight text-foreground">Swap</span>
         </Link>
 
         <nav className="flex items-center gap-2">
